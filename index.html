@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -565,7 +565,7 @@
   const labelFor=id=>(categories.find(c=>c[0]===id)||categories[0])[1];
   const hasCategory=(work,filter)=>filter==='all'||work.category.split(' ').includes(filter);
   function setTheme(theme){document.documentElement.dataset.theme=theme;$('.theme-toggle').setAttribute('aria-label',theme==='light'?'切换为深色主题':'切换为浅色主题');try{localStorage.setItem('cai-portfolio-v2-theme',theme)}catch(e){}}
-  try{setTheme(localStorage.getItem('cai-portfolio-v2-theme')||'dark')}catch(e){}
+  setTheme('light');
   $('.theme-toggle').addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light'));
   categories.forEach(([id,label])=>{const button=document.createElement('button');button.className='filter'+(id==='all'?' active':'');button.type='button';button.dataset.filter=id;button.setAttribute('aria-pressed',String(id==='all'));button.innerHTML=`${label}<sup>${works.filter(w=>hasCategory(w,id)).length}</sup>`;button.addEventListener('click',()=>{activeFilter=id;document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button))});renderGallery()});$('.filters').append(button)});
   function makeTags(work){return work.category.split(' ').map(c=>`<span class="tag">${labelFor(c)}</span>`).join('')}
@@ -625,4 +625,3 @@
   </script>
 </body>
 </html>
-
