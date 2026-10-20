@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>猫头鹰的奇想制造所</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#182337;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif}main{width:min(100vw,177.7778vh);position:relative;aspect-ratio:16/9;overflow:hidden;background:#3265ef}svg{width:100%;height:100%;display:block}.ink{stroke:#182337;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}.fine{stroke-width:3}.cream{fill:#fff1df}.blue{fill:#3265ef}.red{fill:#ff526b}.yellow{fill:#ffdb58}.cyan{fill:#66dede}.none{fill:none}text{stroke:none;fill:#182337;font-weight:800}button{border:1px solid #fff4;background:#182337b8;color:#fff1df;border-radius:30px;padding:9px 16px;cursor:pointer;font:inherit;font-size:12px}nav{position:absolute;right:2%;bottom:2%;display:flex;gap:8px;opacity:0;transition:opacity .2s}main:hover nav,nav:focus-within{opacity:1}button:hover{background:#3265ef}main:fullscreen{width:100vw;height:100vh;aspect-ratio:auto}main:fullscreen svg{object-fit:contain}
+</style>
+</head>
+<body>
+<main id="stage" data-composition-id="owl-factory" data-width="1600" data-height="900" data-duration="18">
+<svg id="art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="会变身的猫头鹰在流水线上，把零件组装成牛仔杯、星星台灯和小火箭，18秒无缝循环动画">
+<defs>
+ <filter id="hand" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency=".065" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.7" xChannelSelector="R" yChannelSelector="G"/></filter>
+ <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="12"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".075"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <path id="star" d="M0-24 8-8 26-5 12 8 15 26 0 17-16 25-12 6-25-6-7-9Z"/>
+ <pattern id="hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><path d="M0 0V18" stroke="#182337" stroke-width="4" opacity=".15"/></pattern>
+ <clipPath id="beltClip"><rect x="60" y="661" width="1480" height="103" rx="51"/></clipPath>
+</defs>
+<rect width="1600" height="900" fill="#3265ef"/>
+<g filter="url(#hand)">
+<path d="M-90 480Q230 130 470 250T1060 200T1660 115" fill="none" stroke="#94cfff" stroke-width="65" opacity=".18"/>
+<circle cx="1270" cy="205" r="143" fill="#ff526b"/>
+<path d="M0 820Q260 760 430 840T900 825T1600 812V900H0Z" fill="#254fcd"/>
+<g fill="#fff1df">
+<text x="72" y="85" style="fill:#fff1df;font-size:21px;letter-spacing:5px">THE LITTLE IDEA FACTORY</text>
+<text x="70" y="151" style="fill:#fff1df;font-size:50px;letter-spacing:3px">奇想制造所</text>
+<text x="74" y="187" style="fill:#b8d9ff;font-size:18px;font-weight:500;letter-spacing:3px">一只猫头鹰，和它的无限灵感。</text>
+</g>
+<g class="ink">
+<g transform="translate(1190 66) rotate(4)">
+<rect width="330" height="59" rx="28" fill="#ffdb58"/>
+<circle cx="30" cy="29" r="8" fill="#ff526b"/><text x="53" y="37" font-size="18" letter-spacing="2">HANDMADE WITH MAGIC</text>
+</g>
+<!-- studio pinboard -->
+<g transform="translate(111 272) rotate(-5)">
+<rect x="8" y="10" width="265" height="279" rx="17" fill="#182337" opacity=".18"/>
+<rect width="265" height="279" rx="17" fill="#ffdb58"/>
+<path d="M30 58H235M30 222H235" class="none fine" opacity=".3"/>
+<text x="28" y="39" font-size="17" letter-spacing="3">IDEA / 001</text>
+<g transform="translate(47 79) rotate(3)" class="fine">
+<path d="M0 0H171V119L147 143H0Z" class="cream"/><path d="M147 143V119H171" class="none"/>
+<circle cx="53" cy="57" r="25" fill="none" stroke="#3265ef"/>
+<path d="M101 30 133 83H77Z" fill="none" stroke="#ff526b"/>
+<path d="M34 107H121M48 100V114M105 100V114" fill="none" stroke="#3265ef"/>
+</g><path d="M101-9 155-7 151 13 103 10Z" fill="#ff526b" stroke="none"/>
+<text x="32" y="256" font-size="15">拆开想象 · 重新组合</text>
+</g>
+<!-- right supply shelf -->
+<g transform="translate(1260 310)">
+<path d="M-40 213H260L242 242H-24Z" fill="#fff1df"/>
+<path d="M0 244V288M216 244V288" class="none"/>
+<g transform="rotate(9 168 138)"><path d="M133 107 142 32 158 20 167 36 163 110" class="yellow"/><path d="M142 32 158 20 167 36" fill="#182337"/><path d="M184 117 200 43 216 47 201 122" class="red"/><path d="M197 43Q183 5 211 0Q233 23 216 47" class="cream"/></g>
+<path d="M111 116H223L213 210H123Z" fill="#ff526b"/>
+<use href="#star" transform="translate(169 161) scale(.7)" class="cream fine"/>
+<rect x="-19" y="162" width="95" height="48" rx="8" class="yellow"/>
+<rect x="-5" y="136" width="69" height="26" rx="6" class="cyan"/>
+<circle cx="29" cy="184" r="6" fill="#182337"/>
+</g>
+<!-- magical halo -->
+<circle cx="804" cy="402" r="236" fill="#92ceff" opacity=".24" stroke="none"/>
+<ellipse id="orbit" cx="804" cy="421" rx="302" ry="171" fill="none" stroke="#fff1df" stroke-width="3" stroke-dasharray="8 20" opacity=".32"/>
+<!-- owl -->
+<g id="owl">
+<path id="cape" d="M701 462Q601 467 563 631L690 588 733 653 822 564 939 640 1048 584Q961 537 922 460Z" fill="#ff526b"/>
+<path d="M702 542 680 648Q716 666 742 646L762 559M839 560 855 648Q885 667 911 646L884 541" fill="#ffdb58"/>
+<path d="M671 640Q701 620 735 639L742 669H664ZM851 640Q890 620 915 640L925 669H850Z" fill="#182337"/>
+<path id="body" d="M667 400Q635 464 656 558Q686 619 798 625Q919 626 950 551Q972 457 925 400Z" fill="#3265ef"/>
+<path d="M719 452Q797 491 880 451L906 597Q798 639 692 595Z" fill="#fff1df"/>
+<path d="M725 468 707 568M869 467 889 569" class="none" stroke="#ff526b" stroke-width="15"/>
+<path d="M753 539H848V588Q800 613 755 588Z" class="yellow fine"/>
+<use href="#star" transform="translate(801 566) scale(.52)" fill="#3265ef" stroke="none"/>
+<g id="head">
+<path d="M646 314 640 224Q690 226 731 270Q804 240 872 269Q918 224 958 231L946 329Q985 409 919 460Q865 500 799 477Q714 504 654 447Q619 393 646 314Z" fill="#398cf1"/>
+<path d="M649 243 676 298 713 282M941 248 915 300 883 283" fill="#182337" stroke="none"/>
+<path d="M661 352Q672 290 737 300Q776 306 800 329Q831 297 873 300Q943 304 943 371Q948 442 875 455Q832 459 800 429Q764 463 719 455Q649 449 661 352Z" class="cream"/>
+<g id="eyes"><ellipse cx="739" cy="369" rx="24" ry="37" fill="#182337" stroke="none"/><ellipse cx="865" cy="369" rx="24" ry="37" fill="#182337" stroke="none"/><circle cx="748" cy="355" r="8" fill="#fff1df" stroke="none"/><circle cx="874" cy="355" r="8" fill="#fff1df" stroke="none"/></g>
+<path d="M783 398 801 424 820 398 802 387Z" class="yellow fine"/>
+<ellipse cx="697" cy="410" rx="22" ry="14" class="red" stroke="none"/><ellipse cx="906" cy="410" rx="22" ry="14" class="red" stroke="none"/>
+<path d="M770 281 800 297 825 278" class="none fine" stroke="#a3d7ff"/>
+<g id="artist"><path d="M678 256Q661 206 742 193Q825 163 878 216L887 251Q789 274 678 256Z" class="red"/><path d="M775 191 790 167" class="none"/><path d="M711 215Q737 201 763 203" class="none" stroke="#ff9ba7"/></g>
+<g id="engineer"><path d="M688 255Q684 174 798 178Q907 179 916 255Z" class="yellow"/><path d="M777 184V239M811 184V239" class="none" stroke="#e8a93f"/><path d="M672 254H929" class="none" stroke="#ffdb58" stroke-width="19"/><g fill="none" stroke="#ff526b" stroke-width="10"><rect x="701" y="337" width="80" height="67" rx="20"/><rect x="824" y="337" width="80" height="67" rx="20"/><path d="M782 359H824"/></g></g>
+<g id="wizard"><path d="M701 248 807 108Q828 171 900 248Z" fill="#3265ef"/><path d="M672 255Q800 225 932 257Q804 287 672 255Z" fill="#3265ef"/><use href="#star" transform="translate(810 194) scale(.6)" class="yellow fine"/><circle cx="789" cy="144" r="6" fill="#fff1df" stroke="none"/></g>
+</g>
+<g id="leftWing"><path d="M681 452Q636 426 609 468L570 527Q571 548 596 542L620 528Q606 553 625 558Q644 564 680 519Q701 488 681 452Z" fill="#398cf1"/><path d="M616 504 645 478" class="none fine" stroke="#a3d7ff"/></g>
+<g id="rightWing"><path d="M918 455Q954 431 978 472L1035 520Q1038 542 1012 540L990 531Q1000 552 980 553Q942 543 914 507Z" fill="#398cf1"/><g transform="translate(1019 518) rotate(27)"><path d="M-9 7-7-87 8-87 10 7Z" class="yellow fine"/><path d="M-7-87Q-25-114 0-140Q25-110 8-87Z" class="red fine"/><path d="M-7-87H8V-68H-7Z" class="cream fine"/></g></g>
+</g>
+<!-- conveyor -->
+<path d="M170 740 145 849H203L239 741M1348 741 1382 849H1437L1418 740" fill="#fff1df"/>
+<path d="M148 850H217M1371 850H1448" class="none"/>
+<rect x="54" y="654" width="1492" height="119" rx="59" fill="#182337"/>
+<rect x="64" y="662" width="1472" height="94" rx="47" fill="#95c9f2" stroke-width="5"/>
+<g clip-path="url(#beltClip)" id="rollers"></g>
+<path d="M112 674H1488" class="none" stroke="#fff1df" stroke-width="5"/>
+<rect x="604" y="750" width="393" height="63" rx="14" class="yellow"/>
+<text x="800" y="789" text-anchor="middle" font-size="23" letter-spacing="4">小小零件，大大奇想</text>
+<!-- moving design assembly -->
+<g id="product">
+<ellipse cx="0" cy="657" rx="115" ry="10" fill="#182337" stroke="none" opacity=".17"/>
+<path d="M-113 633H113L98 657H-98Z" class="cream" stroke-width="5"/>
+<g id="mug" stroke-width="5">
+<g data-piece="0"><path d="M54 536Q116 529 111 581Q107 622 55 610V586Q85 592 86 567Q85 554 57 560Z" class="cream"/><path d="M-65 521H63V598Q60 631 0 631Q-62 631-65 598Z" class="cream"/><path d="M-63 541H61V594Q0 611-63 594Z" fill="#3265ef"/><ellipse cx="-22" cy="562" rx="5" ry="9" fill="#182337"/><ellipse cx="22" cy="562" rx="5" ry="9" fill="#182337"/><path d="M0 576Q-20 563-36 582Q-21 597 0 584Q20 598 37 582Q19 562 0 576Z" fill="#182337" stroke="none"/></g>
+<g data-piece="1"><path d="M-77 519Q-106 490-66 485L-52 504-39 455Q-14 442 5 460Q29 436 49 457L64 502Q108 478 89 511Q56 540-77 519Z" fill="#398cf1"/><path d="M-48 482Q0 497 56 481L61 500Q0 519-53 501Z" class="red"/></g>
+<g data-piece="2"><path d="M-62 602Q0 622 64 602L60 619Q0 643-58 619Z" class="red"/><path d="M57 609 89 592 92 619 64 618 88 638 59 637Z" class="red"/><use href="#star" transform="translate(40 562) scale(.34)" class="cream" stroke="none"/></g>
+</g>
+<g id="lamp" stroke-width="5">
+<g data-piece="0"><path d="M-67 627Q-67 605 0 605Q67 605 67 627Z" class="red"/><path d="M-9 605V523H9V605Z" class="cream"/></g>
+<g data-piece="1"><path d="M-44 465H44L86 541Q0 562-86 541Z" class="yellow"/><path d="M-34 483-54 528" class="none" stroke="#fff1df" stroke-width="8"/><path d="M49 550V577" class="none fine"/><circle cx="49" cy="580" r="5" class="red"/></g>
+<g data-piece="2"><use href="#star" transform="translate(0 504) scale(.72)" fill="#3265ef"/><ellipse cx="-6" cy="501" rx="2" ry="4" fill="#fff1df" stroke="none"/><ellipse cx="7" cy="501" rx="2" ry="4" fill="#fff1df" stroke="none"/></g>
+</g>
+<g id="rocket" stroke-width="5">
+<g data-piece="0"><path d="M-32 551Q-78 566-72 620L-29 597M32 551Q78 566 72 620L29 597" class="red"/><path d="M-25 605-21 631 0 620 20 631 25 605" class="yellow"/><path d="M0 462Q-54 510-37 604H37Q54 510 0 462Z" class="cream"/></g>
+<g data-piece="1"><path d="M0 454Q-29 476-37 505Q0 522 37 505Q28 476 0 454Z" class="red"/><path d="M-38 591H38V609H-38Z" fill="#3265ef"/></g>
+<g data-piece="2"><circle cy="548" r="25" class="cyan"/><circle cy="548" r="16" fill="#3265ef"/><path d="M-8 548 3 538" class="none" stroke="#fff1df"/></g>
+</g>
+<g id="done" transform="translate(111 477) rotate(9)"><circle r="27" class="cyan"/><path d="M-12 0-3 9 14-11" class="none" stroke-width="5"/></g>
+</g>
+<g id="magic" fill="#ffdb58" stroke-width="3"></g>
+<g id="poof" fill="#fff1df" stroke-width="5"></g>
+<g stroke="none"><use href="#star" class="yellow" transform="translate(450 272) scale(.8)"/><use href="#star" class="yellow" transform="translate(1128 368) scale(.65)"/><use href="#star" fill="#fff1df" transform="translate(1072 188) scale(.4)"/><use href="#star" fill="#ff526b" transform="translate(405 603) scale(.45)"/></g>
+</g>
+<g stroke="none"><text x="76" y="856" fill="#b8d9ff" style="fill:#b8d9ff;font-size:15px;letter-spacing:3px">OWL STUDIO / EST. IN A DAYDREAM</text><text id="modeText" x="1516" y="856" text-anchor="end" style="fill:#fff1df;font-size:17px;letter-spacing:3px">01 / 灵感画师</text></g>
+</g>
+<rect width="1600" height="900" filter="url(#paper)" opacity=".38" pointer-events="none"/>
+</svg>
+<nav aria-label="播放控制"><button id="play">暂停</button><button id="full">全屏</button></nav>
+</main>
+<script>
+(()=>{
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+const add=(parent,tag,attrs)=>{const e=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,v);$(parent).append(e);return e};
+const wheels=Array.from({length:26},(_,i)=>add('rollers','g',{}));
+wheels.forEach((g,i)=>{g.innerHTML='<circle cy="710" r="30" fill="#fff1df" stroke="#182337" stroke-width="5"/><path d="M-19 710H19M0 691V729" fill="none" stroke="#398cf1" stroke-width="4"/><circle cy="710" r="5" fill="#182337" stroke="none"/>';});
+const sparks=Array.from({length:9},()=>add('magic','use',{href:'#star'}));
+const clouds=Array.from({length:8},()=>add('poof','circle',{r:30}));
+const clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x)},mix=(a,b,t)=>a+(b-a)*t;
+const tr=(id,v)=>$(id).setAttribute('transform',v),op=(id,v)=>$(id).setAttribute('opacity',v);
+let paused=false,time=0,last=null;
+function draw(seconds){
+const t=((seconds%18)+18)%18,p=t%6,k=Math.floor(t/6),s=Math.sin(t*Math.PI*2);
+const work=smooth((p-1.5)/.35)*(1-smooth((p-4.1)/.35));
+// Every visible state is a pure function of time, including the loop boundary.
+const change=1-smooth(Math.min(p,6-p)/.38),squash=1-.12*change;
+tr('owl',`translate(0 ${3*Math.sin(t*Math.PI*2/3)})`);
+tr('head',`translate(800 434) rotate(${2*Math.sin(t*Math.PI*2/6)}) scale(${1+.07*change} ${squash}) translate(-800 -434)`);
+['artist','engineer','wizard'].forEach((id,i)=>op(id,i===k?1:0));
+$('body').setAttribute('fill',['#398cf1','#398cf1','#3265ef'][k]);
+op('cape',k===2?1:.0);
+tr('leftWing',`rotate(${-6+work*(13+8*Math.sin(p*9))} 675 465)`);
+tr('rightWing',`rotate(${7-work*(21+9*Math.sin(p*9))} 926 465)`);
+const blink=1-.94*Math.pow(Math.max(0,Math.cos((t-2.3)*Math.PI*2/3)),34);
+tr('eyes',`translate(0 369) scale(1 ${blink}) translate(0 -369)`);
+tr('orbit',`rotate(${4*Math.sin(t*Math.PI/9)} 804 421)`);
+let x=p<1.6?mix(-180,800,smooth(p/1.6)):p<4.5?800:mix(800,1780,smooth((p-4.5)/1.5));
+tr('product',`translate(${x} 0)`);
+['mug','lamp','rocket'].forEach((id,i)=>op(id,i===k?1:0));
+document.querySelectorAll('[data-piece]').forEach(e=>{
+ const j=+e.dataset.piece,a=smooth((p-1.85-j*.62)/.65),spread=1-a;
+ e.setAttribute('transform',`translate(${[-50,60,135][j]*spread} ${[-12,-95,-30][j]*spread}) rotate(${[-12,16,28][j]*spread} 0 560)`);
+});
+op('done',smooth((p-3.95)/.25));
+sparks.forEach((e,i)=>{const a=i*Math.PI*2/9+p*1.7,r=70+35*Math.sin(p*4+i);e.setAttribute('transform',`translate(${800+Math.cos(a)*r*1.6} ${553+Math.sin(a)*r*.8}) rotate(${p*100+i*30}) scale(${.18+.2*(.5+.5*Math.sin(p*6+i))})`);e.setAttribute('opacity',work*(.5+.5*Math.sin(p*8+i)**2));});
+clouds.forEach((e,i)=>{const a=i*Math.PI/4;e.setAttribute('cx',800+Math.cos(a)*(90+95*(1-change)));e.setAttribute('cy',345+Math.sin(a)*(65+65*(1-change)));e.setAttribute('r',25+30*change);e.setAttribute('opacity',change);});
+// 18 seconds moves the tread exactly 18 complete wheel spacings.
+wheels.forEach((g,i)=>{const xx=-50+i*68+(t*68)%68;g.setAttribute('transform',`translate(${xx} 0)`);g.children[1].setAttribute('transform',`rotate(${t*120} 0 710)`);});
+$('modeText').textContent=['01 / 灵感画师','02 / 结构工程师','03 / 奇想魔法师'][k];
+}
+window.seek=seconds=>{time=seconds;draw(time)};
+window.__owlAnimation={duration:18,seek:window.seek,pause:()=>{paused=true},play:()=>{paused=false}};
+$('play').onclick=()=>{paused=!paused;$('play').textContent=paused?'播放':'暂停'};
+$('full').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen();else $('stage').requestFullscreen?.()};
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'){e.preventDefault();$('play').click()}});
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce){paused=true;time=3.8;$('play').textContent='播放'}
+draw(time);
+function frame(now){if(last!==null&&!paused)time+=(now-last)/1000;last=now;draw(time);requestAnimationFrame(frame)}requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
