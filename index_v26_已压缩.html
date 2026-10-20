@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="蔡旋的个人作品集。专注产品视觉、C4D 三维渲染、电商设计与动态影像，十年设计经验。">
+  <meta name="color-scheme" content="light dark">
+  <title>蔡旋 CAI XUAN — 视觉设计与 AI 作品集 v26_已压缩</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231c1c1a'/%3E%3Ctext x='32' y='46' text-anchor='middle' fill='%23faf9f6' font-size='46' font-family='Georgia'%3Ec%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--paper:#f8f8f5;--ink:#232420;--muted:#74766f;--line:#d8d9d2;--soft:#eaece5;--green:#496146;--pad:clamp(22px,4.2vw,80px);--serif:Georgia,'Times New Roman',serif;--sans:Arial,'Microsoft YaHei','PingFang SC',sans-serif}
+    [data-theme=dark]{--paper:#171916;--ink:#eeeee6;--muted:#9b9f94;--line:#3e4238;--soft:#292e25;--green:#bacb96;color-scheme:dark}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}body.modal-open{overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button{background:none;border:0}button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--green);outline-offset:6px}::selection{background:var(--ink);color:var(--paper)}[hidden]{display:none!important}img{display:block;max-width:100%}button svg,a svg{display:block;pointer-events:none}.skip{position:fixed;top:-60px;left:20px;z-index:999;background:var(--ink);color:var(--paper);padding:12px}.skip:focus{top:10px}
+    .topbar{height:104px;margin:0 var(--pad);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:24px}.brand{display:flex;align-items:center;gap:14px;flex-shrink:0}.wordmark{font-family:var(--serif);font-weight:bold;font-size:35px;letter-spacing:-2.6px}.brand-dot{color:var(--green)}.brand-caption{border-left:1px solid var(--line);padding-left:14px;line-height:1.5;font-size:10px;letter-spacing:1.6px;text-transform:uppercase}.nav{display:flex;align-items:center;gap:37px;font-size:12px}.nav a{position:relative;padding:10px 0}.nav small{font-size:9px;margin-right:8px;color:var(--muted)}.nav a:after{content:'';height:1px;background:var(--ink);position:absolute;bottom:2px;left:0;width:0;transition:width .25s}.nav a:hover:after,.nav a.active:after{width:100%}.theme-toggle{border:1px solid var(--line);width:34px;height:34px;border-radius:50%;display:grid;place-items:center}.theme-icon{width:14px;height:14px;border:1px solid currentColor;border-radius:50%;background:linear-gradient(90deg,currentColor 50%,transparent 50%);transition:transform .4s}.theme-toggle:hover .theme-icon{transform:rotate(180deg)}
+    main{padding:0 var(--pad)}.intro{display:grid;grid-template-columns:1.45fr 1fr;gap:30px;align-items:end;padding:66px 0 47px}.eyebrow{font-size:10px;line-height:1.6;letter-spacing:1.9px;text-transform:uppercase;margin:0 0 17px;color:var(--muted)}.intro h1{font:normal clamp(58px,6.65vw,112px)/1.02 var(--serif);letter-spacing:-.065em;margin:0;white-space:nowrap}.intro h1 sup{display:inline-block;vertical-align:top;font:normal 12px/1.4 var(--sans);letter-spacing:0;margin:8px 0 0 15px}.intro-copy{justify-self:end;max-width:330px;padding-bottom:3px}.intro-copy p{font-size:13px;line-height:1.9;margin:0}.intro-copy .intro-name{font-size:15px;margin-bottom:9px}.intro-copy .en{font-size:10px;color:var(--muted);margin-top:11px;letter-spacing:.7px}.spark{display:inline-block;vertical-align:middle;width:25px;height:25px;margin-left:7px;color:var(--green)}
+    .toolbar{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:19px 0 22px;gap:20px}.filters{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.filter{border:1px solid transparent;border-radius:30px;font-size:11px;padding:9px 14px;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}.filter:hover{border-color:var(--line)}.filter.active{background:var(--ink);color:var(--paper)}.filter sup{font-size:8px;position:relative;top:-2px;margin-left:5px;opacity:.6}.gallery-note{color:var(--muted);font-size:9px;letter-spacing:1.2px;white-space:nowrap}.gallery-note span{display:inline-block;margin-left:12px;font-size:16px}.work-grid{position:relative;margin-top:12px;min-height:400px}.work-card{position:absolute;left:0;top:0;text-align:left;display:block;padding:0;transition:opacity .25s;outline-offset:8px!important}.work-visual{position:relative;overflow:hidden;display:block;background:var(--soft);isolation:isolate}.work-visual img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.65,.3,1),filter .4s}.work-visual video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.work-card:hover .work-visual img{transform:scale(1.035)}.work-visual:after{content:'';position:absolute;inset:0;border:1px solid rgba(100,110,90,.08);pointer-events:none}.open-icon{position:absolute;right:12px;top:12px;display:grid;place-items:center;width:31px;height:31px;background:var(--paper);color:var(--ink);border-radius:50%;transform:translateY(6px);opacity:0;transition:opacity .2s,transform .2s;font-size:18px}.work-card:hover .open-icon,.work-card:focus-visible .open-icon{opacity:1;transform:none}.media-badge{position:absolute;bottom:12px;left:12px;font:9px/1 var(--sans);letter-spacing:.9px;color:#fff;background:#20231fbb;border:1px solid #ffffff40;backdrop-filter:blur(8px);padding:7px 9px;display:flex;align-items:center;gap:7px;border-radius:2px}.play-symbol{font-size:8px}.work-caption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:14px}.work-title{font-size:12px;line-height:1.6;font-weight:400;display:block}.work-num{font:10px/1 var(--serif);color:var(--muted);flex-shrink:0}.work-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}.tag{font-size:8px;line-height:1;letter-spacing:.3px;padding:4px 5px;background:var(--soft);color:var(--green)}.gallery-end{border-bottom:1px solid var(--line);margin:13px 0 0;padding:23px 0;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:10px;letter-spacing:.4px}.text-link{border-bottom:1px solid var(--muted);padding-bottom:4px;color:var(--ink)}
+    .about{padding-top:68px}.about-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:52px}.about-heading h1{font:normal clamp(58px,7vw,100px)/1 var(--serif);letter-spacing:-.06em;margin:0}.print-button{font-size:11px;border-bottom:1px solid var(--ink);padding:6px 0;display:flex;gap:25px}.bio{display:grid;grid-template-columns:.8fr 1.55fr;gap:7vw;align-items:start}.portrait{margin:0;max-width:430px}.portrait-image{background:#e8e7df;aspect-ratio:1.05;overflow:hidden;display:flex;align-items:end;justify-content:center}.portrait img{width:100%;height:100%;object-fit:cover}.portrait figcaption{display:flex;justify-content:space-between;font-size:10px;margin-top:14px;color:var(--muted)}.bio-text h2{font-size:32px;line-height:1.5;font-weight:400;letter-spacing:-1px;margin:0 0 20px}.bio-text>p{font-size:13px;line-height:2.15;max-width:650px}.bio-stats{display:flex;gap:50px;margin:30px 0}.bio-stat strong{display:block;font:normal 44px/1 var(--serif);letter-spacing:-2px}.bio-stat span{font-size:10px;display:block;margin-top:10px;color:var(--muted)}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 15px;border-top:1px solid var(--line);padding-top:25px;margin:26px 0}.facts dt{font-size:10px;color:var(--muted);margin-bottom:9px}.facts dd{font-size:12px;margin:0}.resume-section{display:grid;grid-template-columns:.8fr 1.55fr;gap:7vw;border-top:1px solid var(--line);padding:43px 0;margin-top:30px}.resume-heading h2{font:normal 33px/1.1 var(--serif);letter-spacing:-1.4px;margin:0 0 10px}.resume-heading p{font-size:11px;color:var(--muted);margin:0}.job{display:grid;grid-template-columns:155px 1fr;gap:24px;padding:0 0 25px;margin-bottom:25px;border-bottom:1px solid var(--line)}.job:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}.job time{font-size:11px;color:var(--muted);padding-top:5px}.job h3{font-size:16px;font-weight:400;margin:0 0 14px}.job p{font-size:11px;line-height:1.9;color:var(--muted);margin:0}.skill-row{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:2}.skill-row:first-child{padding-top:0}.skill-row:last-child{border:0}.skill-row strong{font-weight:400}.skill-row span{color:var(--muted)}.statement p{font-size:13px;line-height:2.2;margin:0 0 14px}.hobbies{font-size:12px;line-height:2;color:var(--muted)}
+    .contact{margin:96px var(--pad) 0;padding:54px 0 24px;border-top:1px solid var(--line)}.contact-top{display:flex;justify-content:space-between;align-items:start;gap:25px}.available{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:1px;color:var(--green)}.available:before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green)}.contact h2{font:normal clamp(50px,7.4vw,110px)/1.05 var(--serif);letter-spacing:-.055em;margin:24px 0 30px}.contact h2 a{display:inline-flex;gap:40px;align-items:center}.contact h2 svg{width:60px;height:60px;transition:transform .3s}.contact h2 a:hover svg{transform:translate(6px,-6px)}.contact-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:50px}.contact-copy{font-size:12px;line-height:1.9;color:var(--muted);margin:0}.contact-links{display:flex;gap:44px}.contact-link small{font-size:9px;letter-spacing:1px;display:block;color:var(--muted);margin-bottom:9px}.contact-link a{font-size:14px}.copy{font-size:12px;margin-left:6px;opacity:.55;padding:5px}.copy:hover{opacity:1}.copyright{border-top:1px solid var(--line);padding-top:23px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px;color:var(--muted)}.back-top{color:var(--ink);font-size:10px;letter-spacing:0}.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:13px 22px;font-size:12px;border-radius:30px;opacity:0;pointer-events:none;z-index:300;transition:opacity .2s,transform .2s;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
+    dialog{color:var(--ink);background:var(--paper);border:0;padding:0;width:calc(100% - 48px);height:calc(100% - 48px);max-width:1700px;max-height:none;overflow:hidden;margin:auto;box-shadow:0 20px 90px #0003}dialog::backdrop{background:#10130fe0;backdrop-filter:blur(8px)}.viewer-bar{height:66px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:0 27px;gap:15px}.viewer-bar span{font-size:10px;letter-spacing:1px;color:var(--muted)}.close{border:1px solid var(--line);border-radius:50%;width:33px;height:33px;font-size:23px;line-height:1}.viewer-body{height:calc(100% - 66px);display:grid;grid-template-columns:minmax(0,1fr) 290px}.viewer-stage{overflow:auto;overscroll-behavior:contain;background:var(--soft);padding:30px;display:flex;align-items:safe center;justify-content:center}.viewer-stage img{width:auto;height:auto;max-height:100%;object-fit:contain;margin:auto}.viewer-stage.is-detail{display:block;text-align:center}.viewer-stage.is-detail img{width:min(100%,1000px);max-height:none;height:auto;margin:0 auto}.viewer-stage.is-zoomed{display:block}.viewer-stage.is-zoomed img{max-width:none;max-height:none;width:auto;margin:auto}.viewer-stage video{width:100%;max-height:100%;background:#000}.viewer-info{padding:33px 26px;display:flex;flex-direction:column}.viewer-info .eyebrow{font-size:9px;margin-bottom:20px}.viewer-info h2{font-size:24px;font-weight:400;line-height:1.6;margin:0 0 17px;overflow-wrap:anywhere}.viewer-description{color:var(--muted);font-size:12px;line-height:1.9;margin:20px 0}.viewer-tools{display:flex;flex-direction:column;align-items:start;gap:18px;margin-top:24px;font-size:11px}.viewer-tools a,.viewer-tools button{border-bottom:1px solid var(--line);padding:0 0 5px}.viewer-nav{margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between}.viewer-nav button{border:1px solid var(--line);border-radius:50%;width:38px;height:38px;font-size:18px}.viewer-nav span{font-size:11px;color:var(--muted)}.viewer-nav button:hover,.close:hover{background:var(--ink);color:var(--paper)}.key-hint{font-size:9px;color:var(--muted);text-align:center;margin:17px 0 0}
+    @media(min-width:1800px){body{max-width:2200px;margin:auto}.intro{padding-top:85px;padding-bottom:70px}}
+    @media(max-width:1100px){.brand-caption{display:none}.nav{gap:25px}.intro{grid-template-columns:1.4fr 1fr;padding-top:55px}.intro h1{font-size:8vw}.intro-copy{max-width:290px}.intro-copy p{font-size:11px}.intro-copy .intro-name{font-size:14px}.gallery-note{display:none}.filter{padding:8px 11px}.contact-links{gap:23px}.viewer-body{grid-template-columns:minmax(0,1fr) 240px}.viewer-info{padding:25px 20px}.bio{gap:45px}.resume-section{gap:45px}.facts{grid-template-columns:repeat(2,1fr)}.job{grid-template-columns:120px 1fr;gap:15px}}
+    @media(max-width:700px){html{scroll-padding-top:25px}.topbar{height:81px;gap:15px}.wordmark{font-size:29px}.nav{gap:20px;font-size:11px}.nav small{display:none}.nav .contact-nav{display:none}.theme-toggle{width:30px;height:30px}.intro{display:block;padding:43px 0 28px}.intro h1{font-size:12vw;letter-spacing:-.065em}.intro h1 sup{font-size:10px;margin-left:10px;margin-top:5px}.eyebrow{font-size:8px;letter-spacing:1.5px;margin-bottom:14px}.intro-copy{max-width:none;margin-top:27px;display:grid;grid-template-columns:1fr 1.15fr;gap:10px}.intro-copy .intro-name{font-size:13px;margin:0;line-height:1.8}.intro-copy p{font-size:10px;line-height:1.9}.intro-copy .en{display:none}.spark{width:18px;height:18px}.toolbar{padding:16px 0;display:block}.filters{gap:5px}.filter{font-size:10px;padding:8px 10px}.filter sup{font-size:7px;margin-left:3px}.work-grid{margin-top:10px}.work-title{font-size:10px}.work-caption{margin-top:10px;gap:6px}.work-num{font-size:8px}.work-tags{gap:4px;margin-top:6px}.tag{font-size:7px;padding:4px}.open-icon{width:25px;height:25px;font-size:15px;right:8px;top:8px}.media-badge{font-size:7px;bottom:8px;left:8px;padding:6px}.gallery-end{font-size:9px;gap:15px;line-height:1.8}.about{padding-top:43px}.about-heading{margin-bottom:35px}.about-heading h1{font-size:55px}.print-button{font-size:10px;gap:12px}.bio{grid-template-columns:1fr;gap:35px}.portrait{max-width:none;display:grid;grid-template-columns:140px 1fr;align-items:end;gap:22px}.portrait figcaption{display:block;line-height:2}.portrait figcaption span{display:block}.bio-text h2{font-size:27px}.bio-text>p{font-size:12px}.bio-stats{gap:35px}.bio-stat strong{font-size:36px}.facts{grid-template-columns:repeat(3,1fr);gap:23px 10px}.facts dt{font-size:9px}.facts dd{font-size:11px}.resume-section{grid-template-columns:1fr;gap:28px;padding:30px 0;margin-top:12px}.resume-heading h2{font-size:30px}.job{grid-template-columns:105px 1fr;gap:20px}.job time{font-size:9px}.job h3{font-size:15px}.job p{font-size:10px}.skill-row{grid-template-columns:72px 1fr;gap:18px;font-size:11px}.statement p{font-size:12px}.contact{margin-top:58px;padding-top:36px}.contact-top .eyebrow{font-size:8px}.available{font-size:8px;letter-spacing:.5px}.contact h2{font-size:12.5vw;margin:24px 0}.contact h2 a{gap:24px}.contact h2 svg{width:34px;height:34px}.contact-bottom{align-items:start;flex-direction:column;padding-bottom:32px;gap:26px}.contact-copy{font-size:11px}.contact-links{gap:25px;flex-wrap:wrap}.contact-link a{font-size:12px}.contact-link small{font-size:8px}.copyright{font-size:7px;gap:15px;line-height:1.8}.copyright .made-in{display:none}.back-top{font-size:9px}dialog{width:100%;height:100%;max-width:none}.viewer-bar{height:55px;padding:0 18px}.viewer-bar span{font-size:8px}.viewer-body{height:calc(100% - 55px);display:flex;flex-direction:column}.viewer-stage{height:calc(100% - 155px);min-height:150px;padding:15px}.viewer-info{height:155px;position:relative;display:block;padding:18px}.viewer-info .eyebrow,.viewer-description,.key-hint{display:none}.viewer-info h2{font-size:15px;line-height:1.5;margin:0 0 8px;padding-right:0}.viewer-info .work-tags{margin:0;max-width:70%}.viewer-tools{flex-direction:row;margin-top:18px;gap:20px;font-size:10px}.viewer-nav{position:absolute;bottom:14px;right:16px;padding:0;gap:12px}.viewer-nav button{width:30px;height:30px;font-size:14px}.viewer-nav span{font-size:9px}.viewer-info .tag{font-size:8px}}
+    @media(max-width:700px){.intro-copy p{font-size:11px}.intro-copy .spark{display:none}.work-title{font-size:11px}.tag{font-size:8px}.filter{font-size:11px;padding:9px 10px}.gallery-end{font-size:10px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+    @media print{html{color-scheme:light!important}body{background:#fff!important;color:#111!important;--line:#ccc;--muted:#666;--ink:#111;--paper:#fff}.topbar,.work-view,.contact,.print-button,.toast,dialog{display:none!important}.about[hidden]{display:block!important}main{padding:0}.about{padding:0}.about-heading{margin-bottom:20px}.about-heading h1{font-size:44px}.about-heading .eyebrow{margin:0 0 5px}.bio{grid-template-columns:180px 1fr;gap:30px}.portrait-image{height:180px}.bio-text h2{font-size:22px}.bio-text>p{font-size:10px;line-height:1.7}.bio-stats{margin:15px 0;gap:25px}.bio-stat strong{font-size:28px}.bio-stat span{font-size:9px;margin-top:5px}.facts{grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0;padding-top:12px}.facts dt{font-size:9px;margin-bottom:4px}.facts dd{font-size:10px}.resume-section{grid-template-columns:180px 1fr;gap:30px;padding:20px 0;margin-top:15px;break-inside:avoid}.resume-heading h2{font-size:24px}.resume-heading p{font-size:10px}.job{grid-template-columns:105px 1fr;margin-bottom:12px;padding-bottom:12px;gap:10px}.job h3{font-size:12px;margin-bottom:4px}.job p,.job time{font-size:9px}.skill-row{font-size:10px;padding:8px 0}.statement p,.hobbies{font-size:10px;line-height:1.7}.print-contact{display:block!important;font-size:11px;margin-top:12px}@page{margin:14mm;size:A4}}
+
+    /* v2: AI collections and frequently asked questions */
+    .collection-nav{display:flex;align-items:center;gap:28px;padding:0 0 25px;font-size:11px;flex-wrap:wrap}.collection-nav>span{color:var(--muted);font-size:9px;letter-spacing:1.2px;margin-right:auto}.collection-nav a{padding:5px 0;border-bottom:1px solid transparent}.collection-nav a:hover{border-color:var(--ink)}.collection-nav small{font-size:8px;margin-left:4px;color:var(--muted)}
+    .new-section{padding:66px 0 0;margin-top:45px;scroll-margin-top:35px}.new-section+.new-section{border-top:1px solid var(--line);margin-top:72px}.new-section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.new-section-head h2{font:normal clamp(42px,5.2vw,76px)/1.1 var(--serif);letter-spacing:-.055em;margin:0}.new-section-head h2 span{display:block;font:12px/1.4 var(--sans);letter-spacing:1px;margin-top:15px;color:var(--muted)}.new-section-head>p{font-size:12px;line-height:1.9;max-width:330px;color:var(--muted);margin:0 0 3px}.ai-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.ai-video-card{min-width:0}.ai-player{position:relative;aspect-ratio:16/9;background:#070908;overflow:hidden}.ai-player video{width:100%;height:100%;object-fit:contain;display:block}.ai-caption{display:flex;justify-content:space-between;align-items:start;margin-top:18px;gap:20px}.ai-caption h3{font-size:16px;font-weight:400;margin:0 0 10px}.ai-caption p{font-size:10px;letter-spacing:1px;color:var(--muted);margin:0}.ai-caption>a{font-size:11px;white-space:nowrap;padding-bottom:4px;border-bottom:1px solid var(--line)}.ai-next{aspect-ratio:16/9;border:1px dashed var(--line);display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--soft);text-align:center}.ai-next-mark{font:normal 65px/1 var(--serif);color:var(--muted);margin-bottom:22px}.ai-next strong{font:normal 26px/1.2 var(--serif);letter-spacing:-.5px}.ai-next p{font-size:11px;color:var(--muted);margin:14px 0 0}.ai-next-note{font-size:10px;color:var(--muted);margin:18px 0 0}.app-feature{display:grid;grid-template-columns:1.35fr 1fr;gap:6%;align-items:center}.app-preview{display:block;border:1px solid var(--line);background:var(--soft);padding:16px;transition:transform .3s}.app-preview:hover{transform:translateY(-4px)}.browser-top{display:flex;align-items:center;gap:5px;margin-bottom:12px;color:var(--muted);font-size:8px;letter-spacing:.7px}.browser-top i{width:5px;height:5px;border:1px solid var(--muted);border-radius:50%}.browser-top span{margin-left:8px}.app-preview img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}.app-copy h3{font-size:30px;font-weight:400;letter-spacing:-1px;margin:14px 0}.app-copy>p{font-size:12px;color:var(--muted);line-height:2}.app-facts{display:flex;gap:25px;margin:27px 0}.app-facts strong{font:normal 30px/1 var(--serif);display:block}.app-facts span{display:block;font-size:9px;color:var(--muted);margin-top:9px}.app-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:45px;border:1px solid var(--line);padding:14px 19px;margin-top:10px;font-size:12px}.app-cta:hover{background:var(--ink);color:var(--paper)}.faq-layout{display:grid;grid-template-columns:.8fr 1.55fr;gap:7vw}.faq-intro h2{font:normal clamp(42px,5vw,65px)/1.08 var(--serif);letter-spacing:-.05em;margin:0 0 17px}.faq-intro>p{font-size:12px;color:var(--muted);line-height:1.9;max-width:260px}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:17px;padding:24px 0;font-size:14px;line-height:1.6}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary small{font:10px var(--serif);color:var(--muted);align-self:start;padding-top:6px}.faq-item summary:after{content:'+';font:normal 23px var(--serif);margin-left:auto;padding-left:15px}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;line-height:2.1;color:var(--muted);margin:0 30px 25px}.faq-item p strong{color:var(--ink);font-weight:400}.faq-callout{display:flex;gap:32px;margin:0 30px 25px}.faq-callout strong{font:normal 32px/1.2 var(--serif);display:block;letter-spacing:-1px}.faq-callout span{font-size:10px;color:var(--muted);display:block;margin-top:6px}
+    @media(max-width:700px){.collection-nav{gap:14px;padding-bottom:20px;font-size:10px}.collection-nav>span{flex-basis:100%;font-size:8px}.new-section{padding-top:35px;margin-top:30px}.new-section+.new-section{margin-top:44px}.new-section-head{display:block;margin-bottom:23px}.new-section-head h2{font-size:45px}.new-section-head h2 span{font-size:11px;margin-top:10px}.new-section-head>p{font-size:11px;margin-top:20px;max-width:none}.ai-video-grid{grid-template-columns:1fr;gap:27px}.ai-caption h3{font-size:15px}.ai-caption>a{font-size:10px}.ai-next{aspect-ratio:auto;min-height:170px}.ai-next-mark{font-size:40px;margin-bottom:12px}.ai-next strong{font-size:23px}.app-feature{grid-template-columns:1fr;gap:30px}.app-copy h3{font-size:27px}.app-copy>p{font-size:12px}.app-preview{padding:12px}.faq-layout{grid-template-columns:1fr;gap:20px}.faq-intro h2{font-size:45px}.faq-intro>p{max-width:none}.faq-item summary{font-size:12px;padding:20px 0;gap:10px}.faq-item p{font-size:11px;margin-left:22px;margin-right:5px}.faq-callout{margin-left:22px}.faq-callout strong{font-size:28px}}
+    @media print{.collection-nav,.new-section{display:none!important}}
+    .about{margin-top:72px;border-top:1px solid var(--line);scroll-margin-top:35px}
+    @media(max-width:700px){.about{margin-top:44px}}
+    @media print{.about{margin-top:0;border-top:0}}
+
+    /* v4: aligned gallery opening row and warm orange video identifiers. */
+    :root{--video-accent:#a74713;--video-label:#fff7ed;--video-tint:#f4e0d3}
+    [data-theme=dark]{--video-accent:#f6ae70;--video-label:#231c14;--video-tint:#3c2b1f}
+    .work-card.is-video .work-visual:after{border:0}
+    .work-card.is-video .media-badge{background:transparent;color:#fff;border:0;font-weight:600;backdrop-filter:none;text-shadow:0 1px 3px #000,0 0 8px #0009}
+    .work-card.is-video .work-title{color:var(--video-accent)}
+    .work-card.is-video .tag{color:var(--video-accent);background:var(--video-tint)}
+    .work-card.is-video .open-icon{background:var(--video-accent);color:var(--video-label)}
+    .ai-video-card .ai-player{outline:none}
+    .ai-video-card .ai-caption h3,.ai-video-card .ai-caption>a{color:var(--video-accent)}
+    .about + #faq{border-top:1px solid var(--line);margin-top:72px}
+    @media(max-width:700px){.about + #faq{margin-top:44px}}
+    /* v5: neutral backing for transparent art and distinct detail-page titles. */
+    .work-card[data-id="work-27"] .work-visual{background:#e8e8e4}
+    :root{--detail-accent:#285fa0}
+    [data-theme=dark]{--detail-accent:#93baf5}
+    .work-card.is-detail .work-title{color:var(--detail-accent);font-weight:700}
+  
+.ui-project-intro{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.ui-project-intro h3{font-size:27px;font-weight:400;margin:0 0 14px}.ui-project-intro p{font-size:12px;line-height:2;color:var(--muted);max-width:620px;margin:0}.ui-project-intro .app-cta{white-space:nowrap}.ui-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;background:var(--soft);padding:38px}.ui-shot{margin:0;min-width:0}.ui-shot a{display:block;max-width:300px;margin:auto;transition:transform .25s}.ui-shot a:hover{transform:translateY(-5px)}.ui-shot img{width:100%;height:auto;aspect-ratio:375/667;display:block;box-shadow:0 12px 30px #0002}.ui-shot figcaption{max-width:300px;margin:20px auto 0}.ui-shot h4{font-size:14px;font-weight:500;margin:0 0 8px}.ui-shot p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}.ui-footnote{font-size:10px;color:var(--muted);margin-top:18px;letter-spacing:.5px}@media(max-width:700px){.ui-project-intro{display:block}.ui-project-intro .app-cta{margin-top:20px}.ui-gallery{padding:22px;gap:32px;grid-template-columns:1fr}.ui-shot a,.ui-shot figcaption{max-width:270px}}
+.ui-shot a{height:535px;display:flex;justify-content:center;align-items:flex-start}.ui-shot img{width:auto;max-width:100%;height:100%;aspect-ratio:auto;object-fit:contain;box-shadow:none}@media(max-width:700px){.ui-shot a{height:480px}}
+.about .portrait{max-width:290px;width:100%;justify-self:center}
+.about .portrait-image{aspect-ratio:1;border-radius:50%;background:transparent;overflow:hidden}
+.about .portrait-image img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.experience{border-top:2px solid var(--ink)}
+.experience .resume-heading>p:last-child{font-size:17px;font-weight:700;color:var(--ink)}
+.experience .job{border-left:3px solid #c7b482;padding-left:20px;padding-top:5px}
+.experience .job h3{font-size:21px;font-weight:700;color:var(--ink);margin-bottom:12px}
+.experience .job time{font-size:13px;font-weight:600;color:var(--ink)}
+.experience .job p{font-size:13px;line-height:2;color:var(--ink);opacity:.85}
+.experience .job strong{font-weight:700;text-decoration:underline;text-decoration-color:#c7b482;text-underline-offset:4px}
+@media(max-width:700px){.about .portrait{max-width:none;grid-template-columns:120px 1fr;justify-self:start}.experience .job{grid-template-columns:1fr;gap:10px;padding-left:14px}.experience .job h3{font-size:19px}}
+@media print{.work-extras{display:none!important}.about .portrait{max-width:160px}.about .portrait-image{height:auto}.experience .job h3{font-size:12px}.experience .job p,.experience .job time{font-size:9px}}
+.experience .job h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px}.experience .job h3 .job-salary{font-size:14px;font-weight:500;white-space:nowrap}.ai-player iframe{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0}/* Full detail images pan upward within their existing card frames. */
+#workGrid .is-detail .work-visual img{object-fit:cover;object-position:center top;transform:none;animation:detail-pan-up 40s linear infinite}
+@keyframes detail-pan-up{0%,5%{object-position:center top}90%,99.9%{object-position:center bottom}100%{object-position:center top}}
+</style>
+<style>.ui-live{width:100%;height:610px;border:0;display:block;background:#f2f2f2}.ui-shot:has(.ui-live){min-width:0}@media(max-width:700px){.ui-live{height:580px}}.experience .job h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px}.experience .job h3 .job-salary{font-size:14px;font-weight:500;white-space:nowrap}.ai-player iframe{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0}/* Full detail images pan upward within their existing card frames. */
+#workGrid .is-detail .work-visual img{object-fit:cover;object-position:center top;transform:none;animation:detail-pan-up 40s linear infinite}
+@keyframes detail-pan-up{0%,5%{object-position:center top}90%,99.9%{object-position:center bottom}100%{object-position:center top}}
+</style><style id="fixed-phone-gallery">#app-ui .ui-gallery{display:flex;flex-wrap:nowrap;justify-content:flex-start;align-items:flex-start;gap:32px;overflow:hidden;min-width:0;max-width:100%}#app-ui .ui-shot,#app-ui .ui-shot:has(.ui-live){flex:0 0 300px;width:300px;min-width:300px}#app-ui .ui-live{width:300px;height:610px;aspect-ratio:30/61;max-width:none;border:0}#app-ui .ui-shot figcaption{width:300px;max-width:300px;margin:20px 0 0}@media(max-width:700px){#app-ui .ui-gallery{padding:22px;gap:32px}#app-ui .ui-live{width:300px;height:610px}}.experience .job h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px}.experience .job h3 .job-salary{font-size:14px;font-weight:500;white-space:nowrap}.ai-player iframe{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0}/* Full detail images pan upward within their existing card frames. */
+#workGrid .is-detail .work-visual img{object-fit:cover;object-position:center top;transform:none;animation:detail-pan-up 40s linear infinite}
+@keyframes detail-pan-up{0%,5%{object-position:center top}90%,99.9%{object-position:center bottom}100%{object-position:center top}}
+</style><style>#app-ui .ui-gallery{overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--muted) var(--soft)}.experience .job h3{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px}.experience .job h3 .job-salary{font-size:14px;font-weight:500;white-space:nowrap}.ai-player iframe{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0}/* Full detail images pan upward within their existing card frames. */
+#workGrid .is-detail .work-visual img{object-fit:cover;object-position:center top;transform:none;animation:detail-pan-up 40s linear infinite}
+@keyframes detail-pan-up{0%,5%{object-position:center top}90%,99.9%{object-position:center bottom}100%{object-position:center top}}
+</style></head>
+<body>
+  <a class="skip" href="#main">跳转到内容</a>
+  <header class="topbar" id="top">
+    <a class="brand" href="#work" aria-label="蔡旋作品集首页"><span class="wordmark">cai<span class="brand-dot">.</span>xuan</span><span class="brand-caption">Independent<br>Visual Designer</span></a>
+    <nav class="nav" aria-label="主导航">
+      <a class="active" href="#work" data-nav="work"><small>01</small>作品</a>
+      <a href="#about" data-nav="about"><small>02</small>关于 / 简历</a>
+      <a class="contact-nav" href="#contact"><small>03</small>联系 ↗</a>
+      <button class="theme-toggle" type="button" aria-label="切换为浅色主题" title="切换黑白主题"><span class="theme-icon" aria-hidden="true"></span></button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="work-view" id="work" aria-label="作品集">
+      <div class="intro">
+        <div><p class="eyebrow">Cai Xuan · Visual Design Portfolio / 2026</p><h1>Selected works.<sup>(38)</sup></h1></div>
+        <div class="intro-copy"><p class="intro-name">我是蔡旋，视觉设计师。<svg class="spark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 0v32M0 16h32M4.7 4.7l22.6 22.6M4.7 27.3 27.3 4.7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></p><p>从产品的每一处细节，到画面的第一眼感受。<br>以三维、平面与动态影像，让想法被看见。</p><p class="en">3D RENDERING · GRAPHIC DESIGN · MOTION</p></div>
+      </div>
+      <nav class="collection-nav" aria-label="作品版块导航"><span>EXPLORE THE COLLECTION</span><a href="#work">视觉作品 <small>38</small></a><a href="#app-ui">APP UI ↘</a><a href="#ai-video">AI视频预演 ↘</a><a href="#ai-apps">AI 应用 ↘</a><a href="#faq">常见问题 ↘</a></nav>
+      <div class="toolbar"><div class="filters" role="group" aria-label="筛选作品"></div><span class="gallery-note">A COLLECTION OF IDEAS & IMAGES <span>↙</span></span></div>
+      <div class="work-grid" id="workGrid" aria-label="作品画廊"></div>
+      <div class="gallery-end"><span id="galleryCount" aria-live="polite"></span><a class="text-link" href="#about">认识作品背后的我 ↗</a></div>
+
+</section>
+    <section class="about" id="about" aria-label="关于蔡旋及个人简历">
+      <div class="about-heading"><div><p class="eyebrow">A little about the person behind the pixels</p><h1>About me.</h1></div><button class="print-button" type="button">打印 / 保存简历 <span>↗</span></button></div>
+      <div class="bio">
+        <figure class="portrait"><div class="portrait-image"><img src="assets/lqOVltv.png" alt="蔡旋的个人头像" loading="lazy"></div><figcaption><span>蔡旋 / CAI XUAN</span><span>Shenzhen, China</span></figcaption></figure>
+        <div class="bio-text"><p class="eyebrow">Visual designer · 3D & Motion</p><h2>把复杂的产品，<br>变成清晰、有质感的视觉。</h2><p>我是一名专注于产品视觉的设计师，工作横跨平面、电商、三维与动态影像。擅长从复杂需求中提炼重点，并把它转化为清晰、有质感、能落地的画面。</p><p>期待参与消费电子、影像器材、生活方式与新锐品牌项目，欢迎长期视觉合作。</p>
+<p>站酷 | <a href="https://www.zcool.com.cn/u/15418122" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere">https://www.zcool.com.cn/u/15418122</a></p>
+          <div class="bio-stats"><div class="bio-stat"><strong>10<span style="display:inline;font:20px var(--serif);color:inherit">年</span></strong><span>设计工作经验</span></div><div class="bio-stat"><strong>3D</strong><span>渲染与产品动态影像</span></div><div class="bio-stat"><strong>AI</strong><span>辅助创意与设计</span></div></div>
+          <dl class="facts"><div><dt>姓名 / 年龄 / 婚恋状态</dt><dd>蔡旋 / 34 岁 / 单身</dd></div><div><dt>居住地</dt><dd>深圳·准备搬家</dd></div><div><dt>目标岗位</dt><dd>平面+3D+AI+运营</dd></div><div><dt>学历</dt><dd>大专</dd></div><div><dt>在职状态 / 到岗</dt><dd>离职 / 3–10 天可入职</dd></div><div><dt>薪资期望</dt><dd>9–12K / 月</dd></div></dl>
+          <div class="print-contact" hidden>电话 / 微信：13145801480　　邮箱：501252861@qq.com</div>
+        </div>
+      </div>
+      <section class="resume-section experience"><div class="resume-heading"><p class="eyebrow">01 / Experience</p><h2>The journey.</h2><p>工作经历</p></div><div>
+        <article class="job"><time>2025.01 — 现在</time><div><h3>阿迈科技 <span class="job-salary">工资：12000</span></h3><p>详情页及延展、<strong>亚马逊 A+</strong>、渲染产品图、推广海报、MG 动画。</p></div></article>
+        <article class="job"><time>2023.03 — 2024.12</time><div><h3>惠科股份 <span class="job-salary">工资：13000</span></h3><p><strong>3D 渲染产品图</strong>、详情页及延展、推广海报、代理商门店广告。</p></div></article>
+        <article class="job"><time>2020.05 — 2023.01</time><div><h3>云觅科技 <span class="job-salary">工资：11000</span></h3><p><strong>3D 渲染视频</strong>、渲染产品图、主图和详情页、推广海报、<strong>APP 页面 UI</strong>、产品刀模。</p></div></article>
+        <article class="job"><time>2016.02 — 2020.04</time><div><h3>盛峰黄金 <span class="job-salary">工资：9000</span></h3><p>公众号推文、PPT 美化、展厅广告物料、<strong>视频剪辑</strong>、节目海报、珠宝展物料。</p></div></article>
+      </div></section>
+      <section class="resume-section"><div class="resume-heading"><p class="eyebrow">02 / Toolkit</p><h2>Tools of the trade.</h2><p>软件与技能</p></div><div><div class="skill-row"><strong>三维 / 3D</strong><span>C4D · OC · RS · KS · ZB · UV · DAZ</span></div><div class="skill-row"><strong>视频 / Motion</strong><span>AE · PR · 剪映</span></div><div class="skill-row"><strong>平面 / Graphic</strong><span>PS · AI · CDR · UI</span></div><div class="skill-row"><strong>AI 辅助设计</strong><span>Codex · Claude · Tapnow · GPT · Gemini · Lovart · Lib · RHTV · MJ · ComfyUI · SD · 豆包</span></div></div></section>
+      <section class="resume-section"><div class="resume-heading"><p class="eyebrow">03 / Approach</p><h2>Care in every detail.</h2><p>自我评价</p></div><div class="statement"><p>独立完成建模、渲染、后期、合成剪辑等工作，追求完美质感和冲击力的表现。</p><p>认真努力解决问题，对作品美感质感有较高的追求。优化模型，搭建场景，对产品图的色彩、材质、光源、构图、比例等有成熟的把握力。</p><p>擅长使用 Codex、Claude、Tapnow、GPT、Gemini、Lovart、豆包、Lib、RHTV、MJ、ComfyUI、SD 等 AI 工具辅助设计。</p></div></section>
+      <section class="resume-section"><div class="resume-heading"><p class="eyebrow">04 / Beyond the screen</p><h2>Life, in between.</h2><p>兴趣爱好</p></div><p class="hobbies">健身 / 樊登读书 / 瑜伽 / 周边游 / 户外运动 / 卡丁车 / 学英语 / 学点东西……</p></section>
+    </section>
+<section class="work-extras">
+      <section class="new-section" id="app-ui" aria-labelledby="appUiHeading">
+        <div class="new-section-head"><div><p class="eyebrow">02 / Interface design</p><h2 id="appUiHeading">Made for everyday.<span>APP的UI界面设计</span></h2></div><p>从产品视觉，到日常操作。<br>让设备、功能与信息清晰呈现。</p></div>
+        <div class="ui-project-intro"><div><h3>红树河熊 APP</h3><p>移动端 UI 设计作品精选。围绕车辆与智能钥匙的使用场景，按目录顺序展示前八个界面，展示统一的视觉语言与功能布局。另精选 10 个页面，提供可点击的交互演示。</p></div><a class="app-cta" href="app_demo_v26_已压缩.html" target="_blank" rel="noopener">体验 APP 交互 <span>↗</span></a></div>
+        <div class="ui-gallery" tabindex="0" role="region" aria-label="八个 APP 界面，横向滚动浏览"><figure class="ui-shot"><iframe class="ui-live" title="我的汽车 · 宾利慕尚 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#car"></iframe><figcaption><h4>01 / 我的汽车 · 宾利慕尚</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="我的电动车 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#electric-scooter"></iframe><figcaption><h4>02 / 我的电动车</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="我的液晶钥匙 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#lcd-key"></iframe><figcaption><h4>03 / 我的液晶钥匙</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="车辆分享 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#vehicle-sharing"></iframe><figcaption><h4>04 / 车辆分享</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="定制壁纸 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#wallpaper"></iframe><figcaption><h4>05 / 定制壁纸</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="发现商城 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#membership"></iframe><figcaption><h4>06 / 发现商城</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="个人中心 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#profile"></iframe><figcaption><h4>07 / 个人中心</h4></figcaption></figure><figure class="ui-shot"><iframe class="ui-live" title="全部订单 交互预览" loading="lazy" src="app_demo_v26_已压缩.html?embed=1#orders"></iframe><figcaption><h4>08 / 全部订单</h4></figcaption></figure></div><p class="ui-footnote">SELECTED SCREENS / 01—08 · 横向滚动浏览 · 界面内可点击交互</p>
+      </section>
+      <section class="new-section" id="ai-video" aria-labelledby="aiVideoHeading">
+        <div class="new-section-head"><div><p class="eyebrow">03 / Moving ideas</p><h2 id="aiVideoHeading">AI in motion.<span>AI视频预演</span></h2></div><p>让想象进入镜头。<br>探索 AI 影像与产品表达之间的更多可能。</p></div>
+        <div class="ai-video-grid" id="aiVideoGrid">
+          <!-- 后续作品：复制一份 ai-video-card article，修改视频、封面和标题，即按两列自动排列。 -->
+          <article class="ai-video-card"><div class="ai-player"><video controls autoplay muted loop playsinline preload="metadata" poster="assets/ai-video/sound-and-light.jpg" aria-label="播放 AI 音响视频：让声音，有了光"><source src="assets/ai-video/sound-and-light.mp4" type="video/mp4">浏览器不支持播放，请通过下方链接打开视频。</video></div><div class="ai-caption"><div><h3>《让声音，有了光》</h3><p>AI VIDEO · 音响产品短片 · 00:15</p></div><a href="assets/ai-video/sound-and-light.mp4" target="_blank" rel="noopener">打开视频 ↗</a></div></article>
+          <article class="ai-video-card">
+            <div class="ai-player"><video controls autoplay muted loop playsinline preload="metadata" poster="assets/ai-video/keyboard-product.jpg" aria-label="播放键盘产品视频预演"><source src="assets/ai-video/keyboard-product.mp4" type="video/mp4">浏览器不支持播放，请通过下方链接打开视频。</video></div>
+            <div class="ai-caption"><div><h3>键盘产品视频预演</h3><p>AI VIDEO · 键盘产品短片 · 00:15</p></div><a href="assets/ai-video/keyboard-product.mp4" target="_blank" rel="noopener">打开视频 ↗</a></div>
+          </article>
+                  <article class="ai-video-card">
+            <div class="ai-player"><video controls autoplay muted loop playsinline preload="metadata" aria-label="播放古筝演奏视频生成"><source src="assets/ai-video/guzheng-performance.mp4" type="video/mp4">浏览器不支持播放，请通过下方链接打开视频。</video></div>
+            <div class="ai-caption"><div><h3>古筝演奏视频生成</h3><p>AI VIDEO · 古筝演奏影像 · 00:15</p></div><a href="assets/ai-video/guzheng-performance.mp4" target="_blank" rel="noopener">打开视频 ↗</a></div>
+          </article><article class="ai-video-card"><div class="ai-player"><iframe src="assets/ai-video/owl-factory.html" title="猫头鹰的奇想制造所 · 18秒循环动画" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div><div class="ai-caption"><div><h3>猫头鹰的奇想制造所</h3><p>HTML 动画 · 奇想工厂 · 00:18</p></div><a href="assets/ai-video/owl-factory.html" target="_blank" rel="noopener">打开动画 ↗</a></div></article></div>
+      </section>
+      <section class="new-section" id="ai-apps" aria-labelledby="aiAppsHeading">
+        <div class="new-section-head"><div><p class="eyebrow">04 / Useful ideas</p><h2 id="aiAppsHeading">Ideas, made useful.<span>AI 应用</span></h2></div><p>从一张画面，到一个可以使用的工具。<br>用 AI 辅助设计，让创意服务于实际工作。</p></div>
+        <article class="app-feature"><a class="app-preview" href="assets/ai-apps/us-holiday-calendar.html" target="_blank" rel="noopener" aria-label="打开美国节日合辑应用"><div class="browser-top" aria-hidden="true"><i></i><i></i><i></i><span>US HOLIDAYS / INSTAGRAM PLAYBOOK</span></div><img src="assets/ai-apps/us-holiday-calendar-preview.jpg" alt="美国节日合辑应用真实界面：节日搜索、分类筛选与月历导航" loading="lazy"></a><div class="app-copy"><p class="eyebrow">AI APPLICATION / 001</p><h3>美国节日合辑</h3><p>为 Instagram 内容运营整理的交互式日历。将节日节点、中文介绍、英文文案与主题卡片整合到一起，让选题与发布规划更直观。</p><div class="app-facts"><div><strong>15</strong><span>个月的运营规划</span></div><div><strong>46</strong><span>个节日与营销节点</span></div><div><strong>34</strong><span>款独立主题图片</span></div></div><div class="work-tags"><span class="tag">节日搜索</span><span class="tag">分类筛选</span><span class="tag">文案复制</span><span class="tag">主题图片下载</span></div><a class="app-cta" href="assets/ai-apps/us-holiday-calendar.html" target="_blank" rel="noopener">打开应用，体验完整功能 <span>↗</span></a></div></article>
+      </section>
+      
+
+      <noscript><p>请启用 JavaScript 以查看作品画廊、分类筛选及作品大图。</p></noscript>
+    </section>
+    <section class="new-section" id="faq" aria-labelledby="faqHeading"><div class="faq-layout"><div class="faq-intro"><p class="eyebrow">05 / Before we start</p><h2 id="faqHeading">Good questions.</h2><p>常见问题<br>关于方向、能力，以及如何开始合作。</p><a class="text-link" href="mailto:501252861@qq.com" style="font-size:11px">还有其他问题？联系我 ↗</a></div><div class="faq-list">
+        <details class="faq-item" open><summary><small>01</small>你期望参与哪些类型的项目？</summary><p>期待参与 <strong>AI 应用、渲染视频、独立站广告、国内外产品详情页、运营设计、UI 界面</strong>等项目，也愿意了解其他有创意、有实际价值的设计方向。</p></details>
+        <details class="faq-item" open><summary><small>02</small>你期望的月薪是？什么时候可以入职？</summary><div class="faq-callout"><div><strong>9–12K</strong><span>期望月薪</span></div><div><strong>3–10 天</strong><span>可入职时间</span></div></div><p>具体薪资与到岗日期，可结合岗位职责和双方安排进一步沟通。</p></details>
+        <details class="faq-item"><summary><small>03</small>你能独立完成哪些设计环节？</summary><p>可以独立完成建模、渲染、后期、合成与剪辑，也有产品主图、详情页、推广海报和 MG 动画经验。重视色彩、材质、灯光与构图，让不同形式的内容保持一致的视觉质感。</p></details>
+        <details class="faq-item"><summary><small>04</small>你会如何把 AI 融入设计工作？</summary><p>将 AI 用于创意探索、画面尝试、影像制作和实用工具搭建，并结合三维、平面与后期工具完成细化。由我把握产品信息、视觉方向和最终呈现，选择适合任务的工具与流程。</p></details>
+        <details class="faq-item"><summary><small>05</small>开始一个项目，需要先提供哪些资料？</summary><p>建议先明确项目目标、目标用户、发布平台、交付尺寸与时间安排。如果有品牌规范、产品资料、模型或实拍素材、文案及参考案例，也可以一起提供，便于准确判断需求和制作范围。</p></details>
+        <details class="faq-item"><summary><small>06</small>如何沟通设计方向，减少反复修改？</summary><p>先对齐核心卖点、使用场景与视觉参考，再确认关键画面或初稿方向，之后推进细化与延展。反馈尽量围绕目标、信息层级和具体画面展开，让每轮修改都有明确重点。</p></details>
+      </div></div></section>
+  </main>
+  <footer class="contact" id="contact">
+    <div class="contact-top"><p class="eyebrow">Have a project in mind?</p><span class="available">OPEN FOR OPPORTUNITIES</span></div>
+    <h2><a href="mailto:501252861@qq.com">Let’s make it.<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13 51 51 13M14 13h37v37"/></svg></a></h2>
+    <div class="contact-bottom"><p class="contact-copy">欢迎工作机会、项目合作，也欢迎聊聊设计。</p><div class="contact-links"><div class="contact-link"><small>EMAIL</small><a href="mailto:501252861@qq.com">501252861@qq.com</a><button class="copy" data-copy="501252861@qq.com" aria-label="复制邮箱" title="复制邮箱">⧉</button></div><div class="contact-link"><small>PHONE / WECHAT</small><a href="tel:13145801480">131 4580 1480</a><button class="copy" data-copy="13145801480" aria-label="复制电话与微信号" title="复制电话与微信号">⧉</button></div></div></div>
+    <div class="copyright"><span>© 2026 CAI XUAN · 视觉设计作品集</span><span class="made-in">BASED IN SHENZHEN / DESIGNED WITH CURIOSITY</span><a class="back-top" href="#top">回到顶部 ↑</a></div>
+  </footer>
+  <dialog id="viewer" aria-labelledby="viewerTitle"><div class="viewer-bar"><span>CAI XUAN / SELECTED WORK</span><button class="close" aria-label="关闭作品预览">×</button></div><div class="viewer-body"><div class="viewer-stage" id="viewerStage"></div><aside class="viewer-info"><p class="eyebrow" id="viewerCategory"></p><h2 id="viewerTitle"></h2><div class="work-tags" id="viewerTags"></div><p class="viewer-description" id="viewerDescription"></p><div class="viewer-tools"><button id="zoomButton" type="button">查看原始尺寸 ↗</button><a id="originalLink" target="_blank" rel="noopener">单独打开作品 ↗</a></div><div class="viewer-nav"><button id="previous" aria-label="上一个作品">←</button><span id="viewerCounter"></span><button id="next" aria-label="下一个作品">→</button></div><p class="key-hint">← → 切换作品 · ESC 关闭</p></aside></div></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script>
+  const works = [
+  {
+    "src": "assets/works-source/work-33.jpg",
+    "title": "机械腕表 · 材质与光影",
+    "tags": "主图 / 佩戴设备 / C4D",
+    "category": "c4d",
+    "id": "work-33",
+    "width": 2048,
+    "height": 2048,
+    "thumb": "assets/previews/work-33.webp"
+  },
+  {
+    "id": "work-27",
+    "src": "assets/works-source/work-27.png",
+    "thumb": "assets/works-source/hero-first-screen.png",
+    "title": "机械腕表 · 爆炸结构",
+    "tags": "C4D / 精密结构 / 产品渲染",
+    "category": "c4d",
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "src": "assets/works-source/work-20.jpg",
+    "title": "Pocket4多功能扩展框",
+    "tags": "主图 / 产品渲染 / 结构展示",
+    "category": "ecommerce c4d",
+    "id": "work-20",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-20.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-07.webm",
+    "title": "产品渲染视频 02",
+    "tags": "产品视频 / 材质灯光 / Motion",
+    "category": "product-video c4d",
+    "media": "video",
+    "id": "work-07",
+    "thumb": "assets/previews/work-07.jpg",
+    "width": 1920,
+    "height": 1080,
+    "seconds": 33
+  },
+  {
+    "src": "assets/works-source/work-37.jpg",
+    "title": "国外展会-大幅灯箱海报",
+    "tags": "海报 / 平面设计 / 视觉氛围",
+    "category": "graphic c4d",
+    "id": "work-37",
+    "width": 1280,
+    "height": 851,
+    "thumb": "assets/previews/work-37.webp"
+  },
+  {
+    "src": "assets/works-source/work-18.jpg",
+    "title": "Pocket 4 多彩硅胶保护套",
+    "tags": "主图 / 色彩系统 / 电商",
+    "category": "ecommerce",
+    "id": "work-18",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-18.webp"
+  },
+  {
+    "src": "assets/works-source/work-28.jpg",
+    "title": "腕表 · 产品视觉",
+    "tags": "品牌图形 / 平面设计 / 收束画面",
+    "category": "c4d",
+    "id": "work-28",
+    "width": 2048,
+    "height": 1152,
+    "thumb": "assets/previews/work-28.webp"
+  },
+  {
+    "src": "assets/works-source/work-16.jpg",
+    "title": "DJI A6多功能拓展兔笼",
+    "tags": "主图 / 电商视觉 / 产品结构",
+    "category": "ecommerce c4d",
+    "id": "work-16",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-16.webp"
+  },
+  {
+    "src": "assets/works-source/work-05.webm",
+    "title": "河豚动态练习",
+    "tags": "练习 / 动态表现 / 视频",
+    "category": "product-video",
+    "media": "video",
+    "id": "work-05",
+    "thumb": "assets/previews/work-05.jpg",
+    "width": 600,
+    "height": 600,
+    "seconds": 5
+  },
+  {
+    "src": "assets/works-source/work-23.jpg",
+    "title": "硅胶保护套液态滴胶款",
+    "tags": "主图 / 材质表达 / 详情视觉",
+    "category": "ecommerce c4d",
+    "id": "work-23",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-23.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-08.webm",
+    "title": "SG20 产品总片",
+    "tags": "产品视频 / 功能演示 / C4D",
+    "category": "product-video c4d",
+    "media": "video",
+    "id": "work-08",
+    "thumb": "assets/previews/work-08.jpg",
+    "width": 1280,
+    "height": 720,
+    "seconds": 24
+  },
+  {
+    "src": "assets/works-source/work-26.jpg",
+    "title": "Insta360 X4 Air 扩展框",
+    "tags": "主图 / 运动相机配件 / 产品视觉",
+    "category": "ecommerce c4d",
+    "id": "work-26",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-26.webp"
+  },
+  {
+    "src": "assets/works-source/work-11.jpg",
+    "title": "Pocket 4 / 3 多功能扩展框详情页",
+    "tags": "详情页 / 信息视觉 / 电商",
+    "category": "detail",
+    "id": "work-11",
+    "width": 790,
+    "height": 17346,
+    "thumb": "assets/previews/work-11.webp"
+  },
+  {
+    "src": "assets/works-source/work-17.jpg",
+    "title": "Pocket 4 / 3 硅胶底座",
+    "tags": "主图 / 产品组合 / 功能表达",
+    "category": "ecommerce c4d",
+    "id": "work-17",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-17.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-06.webm",
+    "title": "产品渲染视频 01",
+    "tags": "产品视频 / C4D / 动态影像",
+    "category": "product-video c4d",
+    "media": "video",
+    "id": "work-06",
+    "thumb": "assets/previews/work-06.jpg",
+    "width": 1280,
+    "height": 720,
+    "seconds": 36
+  },
+  {
+    "src": "assets/works-source/work-24.jpg",
+    "title": "DJI 硅胶保护套",
+    "tags": "主图 / 影像配件 / 电商",
+    "category": "ecommerce c4d",
+    "id": "work-24",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-24.webp"
+  },
+  {
+    "src": "assets/works-source/work-12.jpg",
+    "title": "Pocket 4 硅胶保护套详情页",
+    "tags": "详情页 / 材质表达 / 电商",
+    "category": "detail",
+    "id": "work-12",
+    "width": 790,
+    "height": 25839,
+    "thumb": "assets/previews/work-12.webp"
+  },
+  {
+    "src": "assets/works-source/work-19.jpg",
+    "title": "Pocket 4 / 3 硬壳收纳盒",
+    "tags": "主图 / 场景合成 / 产品卖点",
+    "category": "ecommerce c4d",
+    "id": "work-19",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-19.webp"
+  },
+  {
+    "src": "assets/works-source/work-34.jpg",
+    "title": "通用金属街拍手柄分体设计",
+    "tags": "主图 / 分体结构 / 电商",
+    "category": "ecommerce c4d",
+    "id": "work-34",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-34.webp"
+  },
+  {
+    "src": "assets/works-source/work-02.webm",
+    "title": "六一快乐 MG 动画",
+    "tags": "MG 动画 / 节日视觉 / 视频",
+    "category": "mg",
+    "media": "video",
+    "id": "work-02",
+    "thumb": "assets/previews/work-02.jpg",
+    "width": 1050,
+    "height": 1196,
+    "seconds": 10
+  },
+  {
+    "src": "assets/works-source/insta360-go-ultra-hat-clip-detail-cn.jpg",
+    "title": "Insta360 GO Ultra 多功能磁吸帽檐夹",
+    "tags": "详情页 / 产品功能 / 中文",
+    "category": "detail",
+    "id": "insta360-go-ultra-hat-clip-detail-cn",
+    "width": 664,
+    "height": 14999,
+    "thumb": "assets/previews/insta360-go-ultra-hat-clip-detail-cn.webp"
+  },
+  {
+    "src": "assets/works-source/work-21.jpg",
+    "title": "双接口充电快拆底座",
+    "tags": "主图 / 功能视觉 / 充电场景",
+    "category": "ecommerce c4d",
+    "id": "work-21",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-21.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-09.webm",
+    "title": "刀锋款产品动画",
+    "tags": "产品视频 / 渲染 / 动效",
+    "category": "product-video c4d",
+    "media": "video",
+    "id": "work-09",
+    "thumb": "assets/previews/work-09.jpg",
+    "width": 1920,
+    "height": 1080,
+    "seconds": 23
+  },
+  {
+    "src": "assets/works-source/work-36.jpg",
+    "title": "通用金属街拍手柄",
+    "tags": "主图 / 金属材质 / 产品视觉",
+    "category": "ecommerce c4d",
+    "id": "work-36",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-36.webp"
+  },
+  {
+    "src": "assets/works-source/work-13.jpg",
+    "title": "惠科 ANT255VF 显示器详情页",
+    "tags": "详情页 / 显示器 / 电商",
+    "category": "detail",
+    "id": "work-13",
+    "width": 750,
+    "height": 21669,
+    "thumb": "assets/previews/work-13.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-03.webm",
+    "title": "七夕视频",
+    "tags": "MG 动画 / 节日传播 / 视频",
+    "category": "mg",
+    "media": "video",
+    "id": "work-03",
+    "thumb": "assets/previews/work-03.jpg",
+    "width": 1280,
+    "height": 1280,
+    "seconds": 9
+  },
+  {
+    "src": "assets/works-source/work-25.jpg",
+    "title": "DJI 可充电快拆底座",
+    "tags": "主图 / C4D / 产品结构",
+    "category": "ecommerce c4d",
+    "id": "work-25",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-25.webp"
+  },
+  {
+    "src": "assets/works-source/work-29.jpg",
+    "title": "金属可延长三脚架",
+    "tags": "主图 / 金属质感 / 电商",
+    "category": "ecommerce c4d",
+    "id": "work-29",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-29.webp"
+  },
+  {
+    "src": "assets/works-source/work-15.jpg",
+    "title": "惠科键盘详情页",
+    "tags": "详情页 / 键盘 / 电商视觉",
+    "category": "detail",
+    "id": "work-15",
+    "width": 750,
+    "height": 25624,
+    "thumb": "assets/previews/work-15.webp"
+  },
+  {
+    "src": "assets/works-source/work-04.webm",
+    "title": "中秋国庆视频",
+    "tags": "MG 动画 / 节日视觉 / 视频",
+    "category": "mg",
+    "media": "video",
+    "id": "work-04",
+    "thumb": "assets/previews/work-04.jpg",
+    "width": 800,
+    "height": 600,
+    "seconds": 15
+  },
+  {
+    "src": "assets/works-source/work-30.jpg",
+    "title": "金属快拆 1/4 英寸上盖",
+    "tags": "主图 / 结构卖点 / C4D",
+    "category": "ecommerce c4d",
+    "id": "work-30",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-30.webp"
+  },
+  {
+    "src": "assets/works-source/work-35.jpg",
+    "title": "通用金属街拍手柄套件",
+    "tags": "主图 / 套件展示 / 产品合成",
+    "category": "ecommerce c4d",
+    "id": "work-35",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-35.webp"
+  },
+  {
+    "src": "assets/works-source/work-14.jpg",
+    "title": "惠科 ANT271VQL 显示器详情页",
+    "tags": "详情页 / 参数信息 / 电商",
+    "category": "detail",
+    "id": "work-14",
+    "width": 750,
+    "height": 22670,
+    "thumb": "assets/previews/work-14.webp"
+  },
+  {
+    "src": "assets/works-source/work-31.jpg",
+    "title": "蓝牙顶配版 + 套装版",
+    "tags": "主图 / 套装展示 / 电商",
+    "category": "ecommerce",
+    "id": "work-31",
+    "width": 800,
+    "height": 800,
+    "thumb": "assets/previews/work-31.webp"
+  },
+  {
+    "src": "assets/works-source/work-32.jpg",
+    "title": "蓝牙遥控器 3.0 通用版",
+    "tags": "主图 / 功能表达 / 产品视觉",
+    "category": "ecommerce c4d",
+    "id": "work-32",
+    "width": 1600,
+    "height": 1600,
+    "thumb": "assets/previews/work-32.webp"
+  },
+  {
+    "src": "assets/works-source/work-22.jpg",
+    "title": "Pocket 4 便携保护壳",
+    "tags": "主图 / 产品合成 / 电商",
+    "category": "ecommerce c4d",
+    "id": "work-22",
+    "width": 1500,
+    "height": 1500,
+    "thumb": "assets/previews/work-22.webp"
+  },
+  {
+    "src": "assets/works-optimized/work-10.webm",
+    "title": "花园旗杆产品视频",
+    "tags": "产品视频 / 1920×1080 / 场景演示",
+    "category": "product-video c4d",
+    "media": "video",
+    "id": "work-10",
+    "thumb": "assets/previews/work-10.jpg",
+    "width": 1920,
+    "height": 1080,
+    "seconds": 55
+  },
+  {
+    "src": "assets/works-source/work-01.gif",
+    "title": "MG 动画动态图",
+    "tags": "GIF / 动效练习 / Motion",
+    "category": "mg",
+    "media": "image",
+    "id": "work-01",
+    "width": 450,
+    "height": 450,
+    "thumb": "assets/previews/work-01.webp"
+  }
+];
+  const $=s=>document.querySelector(s);
+  const categories=[['all','全部','All works'],['c4d','三维渲染','3D rendering'],['ecommerce','电商主图','E-commerce'],['product-video','产品视频','Product motion'],['detail','详情长图','Detail design'],['graphic','平面设计','Graphic design'],['mg','MG 动画','Motion graphics']];
+  let activeFilter='all', visibleWorks=[...works], activeView='work', currentIndex=0, resizeFrame=0, toastTimer;
+  const grid=$('#workGrid'), dialog=$('#viewer'), stage=$('#viewerStage'), reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const labelFor=id=>(categories.find(c=>c[0]===id)||categories[0])[1];
+  const hasCategory=(work,filter)=>filter==='all'||work.category.split(' ').includes(filter);
+  function setTheme(theme){document.documentElement.dataset.theme=theme;$('.theme-toggle').setAttribute('aria-label',theme==='light'?'切换为深色主题':'切换为浅色主题');try{localStorage.setItem('cai-portfolio-v2-theme',theme)}catch(e){}}
+  setTheme('light');
+  $('.theme-toggle').addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light'));
+  categories.forEach(([id,label])=>{const button=document.createElement('button');button.className='filter'+(id==='all'?' active':'');button.type='button';button.dataset.filter=id;button.setAttribute('aria-pressed',String(id==='all'));button.innerHTML=`${label}<sup>${works.filter(w=>hasCategory(w,id)).length}</sup>`;button.addEventListener('click',()=>{activeFilter=id;document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button))});renderGallery()});$('.filters').append(button)});
+  function makeTags(work){return work.category.split(' ').map(c=>`<span class="tag">${labelFor(c)}</span>`).join('')}
+  function previewRatio(work){if(work.category==='detail')return 1/1.45;if(work.id==='work-27')return 1384/1498;return work.width/work.height}
+  function renderGallery(){
+    grid.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()});
+    visibleWorks=works.filter(w=>hasCategory(w,activeFilter));grid.replaceChildren();
+    visibleWorks.forEach((work,index)=>{
+      const button=document.createElement('button');button.type='button';button.className='work-card'+(work.media==='video'?' is-video':'')+(work.category.split(' ').includes('detail')?' is-detail':'');button.setAttribute('aria-label',`查看${work.media==='video'?'视频':'作品'}：${work.title}`);button.dataset.id=work.id;
+      const isVideo=work.media==='video', badge=isVideo?`<span class="play-symbol">▶</span> 视频 · ${Math.floor(work.seconds/60)}:${String(work.seconds%60).padStart(2,'0')}`:work.category==='detail'?'完整详情 ↗':work.src.endsWith('.gif')?'GIF / MOTION':'';
+      button.innerHTML=`<span class="work-visual" style="aspect-ratio:${previewRatio(work)}"><img src="${work.thumb}" alt="${work.title}" ${index<6?'fetchpriority="high"':'loading="lazy"'} decoding="async"><span class="open-icon" aria-hidden="true">↗</span>${badge?`<span class="media-badge" aria-hidden="true">${badge}</span>`:''}</span><span class="work-caption"><span class="work-title">${work.title}</span><span class="work-num">${String(works.indexOf(work)+1).padStart(2,'0')}</span></span><span class="work-tags">${makeTags(work)}</span>`;
+      if(work.category.split(' ').includes('detail')){const image=button.querySelector('.work-visual img');image.src=work.src;image.loading='lazy';image.style.animationDuration=Math.max(20,Math.round((work.height/work.width-1.45)*8))+'s';}
+      if(/\.gif(?:[?#]|$)/i.test(work.src)){const image=button.querySelector('.work-visual img');image.src=work.src;image.loading='lazy';}
+      button.addEventListener('click',()=>openWork(index));
+      if(isVideo){const video=document.createElement('video');video.src=work.src;video.poster=work.thumb;video.muted=true;video.defaultMuted=true;video.autoplay=true;video.loop=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-hidden','true');button.querySelector('.work-visual').insertBefore(video,button.querySelector('.open-icon'));video.play().catch(()=>{})}
+      grid.append(button)
+    });
+    $('#galleryCount').textContent=`${String(visibleWorks.length).padStart(2,'0')} 件作品 / ${labelFor(activeFilter)} · 点击作品查看完整内容`;
+    layoutGallery();requestAnimationFrame(layoutGallery);
+  }
+  function layoutGallery(){
+    if(activeView!=='work')return;
+    const width=grid.clientWidth;if(!width)return;
+    const columns=window.innerWidth>1100?4:window.innerWidth>700?3:2;
+    const gap=columns===2?17:columns===3?25:32;
+    const weights=columns===4?[1.18,1,.97,.94]:new Array(columns).fill(1),sum=weights.reduce((a,b)=>a+b,0);
+    const widths=weights.map(w=>(width-gap*(columns-1))*w/sum);
+    const ys=new Array(columns).fill(0);let xs=[0];for(let i=1;i<columns;i++)xs[i]=xs[i-1]+widths[i-1]+gap;
+    [...grid.children].forEach((card,index)=>{const col=index<columns?index:ys.indexOf(Math.min(...ys));card.style.width=widths[col]+'px';card.style.transform=`translate(${xs[col]}px, ${ys[col]}px)`;ys[col]+=card.getBoundingClientRect().height+(columns===2?31:42)});
+    grid.style.height=Math.max(...ys)+'px';
+  }
+  window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(layoutGallery)});
+  if(document.fonts)document.fonts.ready.then(layoutGallery);
+  function navigate(){
+    const hash=location.hash;
+    activeView='work';
+    document.querySelectorAll('[data-nav]').forEach(a=>{const active=a.dataset.nav===(hash==='#about'?'about':'work');a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+    const anchors=['#work','#about','#ai-video','#ai-apps','#faq','#contact','#top'];
+    requestAnimationFrame(()=>{layoutGallery();if(anchors.includes(hash)){const target=document.querySelector(hash);if(target)target.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth'})}});
+  }
+  window.addEventListener('hashchange',navigate);$('.print-button').addEventListener('click',()=>window.print());
+  function showWork(index){
+    currentIndex=(index+visibleWorks.length)%visibleWorks.length;const work=visibleWorks[currentIndex];stage.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()});stage.replaceChildren();stage.className='viewer-stage';
+    const video=work.media==='video';const media=document.createElement(video?'video':'img');media.src=work.src;
+    if(video){media.controls=true;media.playsInline=true;media.preload='metadata';media.poster=work.thumb;media.autoplay=true;media.play().catch(()=>{})}else{media.alt=work.title;if(work.category==='detail')stage.classList.add('is-detail')}
+    stage.append(media);stage.scrollTop=0;stage.scrollLeft=0;$('#viewerTitle').textContent=work.title;$('#viewerCategory').textContent=work.category.split(' ').map(c=>(categories.find(x=>x[0]===c)||[])[2]).join(' / ');$('#viewerTags').innerHTML=makeTags(work);$('#viewerDescription').textContent=work.tags+(work.category==='detail'?'。向下滚动查看完整长图。':'');$('#viewerCounter').textContent=`${String(currentIndex+1).padStart(2,'0')} / ${String(visibleWorks.length).padStart(2,'0')}`;$('#originalLink').href=work.src;$('#zoomButton').hidden=video;$('#zoomButton').textContent='查看原始尺寸 ↗';
+  }
+  function openWork(index){showWork(index);dialog.showModal();document.body.classList.add('modal-open');$('.close').focus()}
+  $('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+  dialog.addEventListener('close',()=>{stage.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()});stage.replaceChildren();document.body.classList.remove('modal-open')});
+  $('#previous').addEventListener('click',()=>showWork(currentIndex-1));$('#next').addEventListener('click',()=>showWork(currentIndex+1));
+  dialog.addEventListener('keydown',e=>{if(e.target.tagName==='VIDEO')return;if(e.key==='ArrowLeft'){e.preventDefault();showWork(currentIndex-1)}if(e.key==='ArrowRight'){e.preventDefault();showWork(currentIndex+1)}});
+  $('#zoomButton').addEventListener('click',()=>{const zoomed=stage.classList.toggle('is-zoomed');$('#zoomButton').textContent=zoomed?'适应窗口 ↙':'查看原始尺寸 ↗'});
+  function toast(text){const box=$('.toast');box.textContent=text;box.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>box.classList.remove('show'),2600)}
+  async function copyText(text){try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.append(t);t.select();const ok=document.execCommand('copy');t.remove();if(!ok)throw Error('copy')}toast('已复制：'+text)}catch(e){toast('请手动复制：'+text)}}
+  document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>copyText(b.dataset.copy)));
+  document.querySelectorAll('#aiVideoGrid video').forEach(video=>{video.muted=true;video.play().catch(()=>{});video.addEventListener('volumechange',()=>{if(!video.muted)document.querySelectorAll('#aiVideoGrid video').forEach(other=>{if(other!==video)other.muted=true})})});
+  renderGallery();navigate();
+  </script>
+</body>
+</html>
